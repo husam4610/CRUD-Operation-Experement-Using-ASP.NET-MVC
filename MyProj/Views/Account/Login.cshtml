@@ -1,0 +1,21 @@
+﻿@model MyProj.ViewModels.LoginViewModel
+<form asp-controller="Account" asp-action="Login" method="post">
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" />
+    </div>
+    <div>
+        <label asp-for="Password"></label>
+        <input asp-for="Password" type="password" />
+    </div>
+    <div>
+        <label asp-for="RememberMe"></label>
+        <input asp-for="RememberMe" type="checkbox" />
+    </div>
+    <button type="submit">Login</button>
+</form>
+
+
+
+
+
